@@ -1,0 +1,68 @@
+### Gradle ###
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Java ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### VS Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+### Cursor ###
+# rules는 팀 공유용으로 커밋, 나머지(mcp.json 등 개인 설정·토큰)는 제외
+.cursor/*
+!.cursor/rules/
+
+### Eclipse (VS Code Java 확장이 생성) ###
+.project
+.classpath
+.settings/
+.factorypath
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+### Env ###
+.env
+.env.*
+!.env.example
