@@ -15,6 +15,7 @@ spec:
         elements:
           - env: dev
           - env: staging
+          - env: prod
   template:
     metadata:
       name: 'product-service-{{env}}'
