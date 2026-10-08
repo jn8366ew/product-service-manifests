@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/jn8366ew/product-service-manifests.git
     targetRevision: main
-    path: overlays/production
+    path: overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: product-service-prod
