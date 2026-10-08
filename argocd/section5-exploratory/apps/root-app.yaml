@@ -6,9 +6,9 @@ metadata:
   name: root-app
   namespace: argocd
 spec:
-  project: product-service
+  project: default
   source:
-    repoURL: https://github.com/<내계정>/product-service-manifests.git
+    repoURL: https://github.com/jn8366ew/product-service-manifests.git
     targetRevision: main
     path: argocd/section5-exploratory/apps/children
   destination:
