@@ -4,10 +4,18 @@ namespace: product-service-prod
 resources:
   - ../../base
   - rollout.yaml
+  - product-service-active.yaml
+  - product-service-preview.yaml
 patches:
   - patch: |-
       apiVersion: apps/v1
       kind: Deployment
+      metadata:
+        name: product-service
+      $patch: delete
+  - patch: |-
+      apiVersion: v1
+      kind: Service
       metadata:
         name: product-service
       $patch: delete
