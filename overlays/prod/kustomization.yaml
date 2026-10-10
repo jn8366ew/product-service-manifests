@@ -22,4 +22,4 @@ patches:
 #      $patch: delete
 images:
   - name: product-service
-    newTag: "v1"
+    newTag: "v3"
